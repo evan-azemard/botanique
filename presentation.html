@@ -7,35 +7,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="botanique.css">
     </head>
-    <body>
+    <body id="presentationbody">
         <header>
 
         </header>
-        <main>
-            <section>
-                <h1>Qui sommes-nous?</h1>
-                <h2>Fleurs de Ville</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3> 
-                <img src="images/vaso.jpg" alt="##">
+        <main id="presentationmain">
+            <section id="presentationsection1">
+                <div>
+                    <img id="presentationimg" src="images/vaso.jpg" alt="">
+                    <div id="presentationtext">
+                        <h1>Salut !</h1>
+                        <p>Nous sommes <span>Fleurs de Ville</span>, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>               
             </section>
-            <section>
+            <section id="fondateursection">
+                <h2>Les fondateurs</h2>
+                <article class="fondateurbox">
+                    <img class="imgfondateur" src="images/evan.jpg" alt="evan azemard">
+                    <h3>Evan Azemard</h3>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">en savoir plus</a>
+                </article>
+                <article class="fondateurbox">
+                    <img class="imgfondateur" src="images/fabio.jpg" alt="fabio tenorio">
+                    <h3>Fabio Tenorio</h3>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">en savoir plus</a>
+                </article>
+            </section>
+            <section id="contactsection">
                 <h3>Contact</h3>
                 <a href="mailto:contact@fleursdeville.com">contact@fleursdeville.com</a>
-                <label for="w3review">Laissez-nous un petit mot:</label>
-                <textarea id="w3review" name="w3review" rows="4" cols="50">Écrivez votre message ici...</textarea>
+                <label for="petitmot">Laissez-nous un petit mot:</label>
+                <textarea id="petitmot" name="petitmot" rows="12" cols="60">Écrivez votre message ici...</textarea>
             </section>
-            <section>
-                <h3>Venez nous trouver pour un thé</h3>
+            <section id="mapsection">
+                <h3>Venez prendre un thé verd avec nous !</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d498.28056099200467!2d-54.72626735153391!3d-2.425272736130077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m3!3m2!1d-2.4252401!2d-54.7261484!4m5!1s0x9288f9213cb04ad5%3A0x80be3f9dd767d647!2zU2FudGFyw6ltLCBQQSwgQnJhc2ls!3m2!1d-2.4506291!2d-54.7009228!5e0!3m2!1spt-BR!2sfr!4v1603289587109!5m2!1spt-BR!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
+            <section id="presentationpartners">
+                <h3>Nos partenaires</h3>
+                <div id="logopartners">
+                    <a href="#"><img class="imglogopartner" src="images/bunge.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/aes.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/cargill.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/monsanto.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/conagra.png"></a>
+                </div>
             </section>
         </main>
         <footer>
-            <a href="accueil.html">accueil</a>
-            <a href="presentation.html">presentation</a>
-            <a href="plantes.html">plantes</a>
-            <a href="fleurs.html">fleurs</a>
-            <a href="arbustes.html">arbustes</a>
-            <a href="legumes.html">legumes</a>
+            <form action="#" id="newsform">
+                <label for="newsinput">Envie de recevoir notre newsletter ?</label>
+                <div>
+                    <input type="text" id="newsinput" placeholder="informez votre adresse email">
+                    <button type="submit" id="newsbutton">Ça y est</button>
+                </div>
+            </form>
+            <div class="footerlistblock">
+                <ul class="footerlist">
+                    <li class="footerlisttitle">Explorez notre siteweb</li>
+                    <li><a href="accueil.html">accueil</a></li>
+                    <li><a href="presentation.html">presentation</a></li>
+                    <li><a href="plantes.html">plantes</a></li>
+                    <li><a href="fleurs.html">fleurs</a></li>
+                    <li><a href="arbustes.html">arbustes</a></li>
+                    <li><a href="legumes.html">legumes</a></li>
+                </ul>
+            </div>
+            <div class="footerlistblock">
+                <ul class="footerlist">
+                    <li class="footerlisttitle">Sites qui peuvent vous intéresser</li>
+                    <li><a href="https://pretapousser.fr/magazine/creer-mini-potager-balcon">Prêt-à-Pousser</a></li>
+                    <li><a href="https://www.gammvert.fr/conseils/conseils-de-jardinage/potager-au-balcon">Gamme Vert</a></li>
+                    <li><a href="https://www.nutrition-animale-marseille.fr/">Champ Vert</a></li>
+                    <li><a href="https://www.roubaud-bonneveine.com/pepiniere-jardinerie">Pépinière Roubaud Jean-Pierre</a></li>
+                    <li><a href="https://www.planfor.fr/?gclid=Cj0KCQjw28T8BRDbARIsAEOMBczN5NZimanG6K4vH1CBpE18pMW5F0CbBcAKk8sEr5mpznn7bDpb1rMaApY_EALw_wcB">Planfor</a></li>
+                </ul>
+            </div>
+            <div class="footerlistblock">
+                <h4>Suivez-nous sur les réseaux sociaux</h4>
+                <div id="footerimgsocial">
+                    <a href="#"><img class="imgicon" src="images/instagram.svg" alt="linkedIn logo"></a>
+                    <a href="#"><img class="imgicon" src="images/pinterest.svg" alt="Facebook logo"></a>
+                    <a href="#"><img class="imgicon" src="images/youtube.svg" alt="Facebook logo"></a>
+                    <a href="#"><img class="imgicon" src="images/twitter.svg" alt="Instragram logo"></a>
+                    <a href="#"><img class="imgicon" src="images/facebook.svg" alt="Twitter logo"></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

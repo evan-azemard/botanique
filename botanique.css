@@ -1,12 +1,265 @@
 /* le style en commun pour toutes les pages */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+* a:visited {
+    color: inherit;
+}
+
 /* le style pour le header en commun */
 
 /* le style pour le footer en commun */
 
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 10vh 0;
+    width: 100%;
+    background-color: #27b46a;
+    color: #05180e;
+}
+
+#newsform {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsform label {
+    margin-bottom: 11px;
+}
+
+#newsinput, #newsbutton {
+    padding: 6px 6px;
+    border-radius: 3px;
+    border: 1px solid #104a2b;
+}
+
+#newsinput {
+    color: #0b3d22;
+}
+
+#newsbutton:hover, #newsinput:hover {
+    box-shadow: 1px 2px 3px #0b3d22;
+}
+
+#newsbutton {
+    background-color: #0b3d22;
+    color: whitesmoke;
+}
+
+.footerlist {
+    list-style: none;
+}
+
+.footerlisttitle {
+    font-weight: bold;
+}
+
+.imglogopartner {
+    width: 100px;
+}
+
+#footerimgsocial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imgicon {
+    width: 25px;
+    padding: 10px 10px;
+}
+
 /* le style pour accueil.html */
 
 /* le style pour presentation.html */
+
+#presentationbody {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#presentationmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#presentationsection1 {
+    color: #1f1f1f;
+    font-size: 5vh;
+}
+
+#presentationsection1 div {
+    height: 180vh;
+    background-color: rgba(255, 255, 100, 0.4);
+    z-index: 1;
+}
+
+#presentationtext {
+    padding: 30vh 52vh;
+    text-align: center;
+}
+
+#presentationtext span {
+    color: orangered;
+}
+
+#presentationtext h1 {
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+#presentationimg {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: -1;
+}
+
+.imgfondateur {
+    width: 20vh;
+    height: 35vh;
+    border-radius: 8px;
+    margin-bottom: 13px;
+}
+
+#fondateursection {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "title title"
+                         "box box";
+    justify-content: space-around;
+    padding: 10vh 0;
+    background-color: #edc02c;
+    color: whitesmoke;
+}
+
+#fondateursection h2 {
+    grid-area: title;
+    text-align: center;
+    margin-bottom: 8vh;
+    font-size: 6vh;
+}
+
+.fondateurbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vh;
+    background-color: #d5ac28;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fondateurbox a {
+    color: inherit;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #bd9924;
+    transition: background-color 80ms;
+}
+
+.fondateurbox a:hover {
+    background-color: #a5861f;
+    box-shadow: 2px 3px 4px #8e731b;
+    font-weight: bold;
+}
+
+#contactsection {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10vh 0;
+    background-color: #f3e2b3;
+    color: #2e2e2c;
+}
+
+#contactsection h3 {
+    margin-bottom: 2vh;
+    font-size: 5vh;
+}
+
+#contactsection a {
+    color: blue;
+}
+
+#petitmot {
+    color: #2e2e2c;
+    font-size: 2vh;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #e9c971;
+}
+
+#mapsection {
+    background-color: #a2eeeb;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mapsection h3 {
+    font-size: 5vh;
+    color: #5c5b58;
+}
+
+#presentationpartners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+    height: 60vh;
+}
+
+#presentationpartners h3 {
+    margin-bottom: 2vh;
+    font-size: 5vh;
+    color: #2e2e2c;
+}
+
+#logopartners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 60%;
+    height: 80%;
+    padding: 10vh 0;
+}
+
+.imglogopartner {
+    margin: 10px 20px;
+    width: 20vh;
+    height: 9vh;
+}
 
 /* le style pour plantes.html */
 
@@ -15,4 +268,49 @@
 /* le style pour arbustes.html */
 
 /* le style pour legumes.html */
+
+#legumebody {
+    background-color: #f3e2b3;
+}
+
+#legumesection1 {
+    width: 100%;
+    padding-top: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#legumesection1img {
+    padding: 0;
+}
+
+#legumesection1txt {
+    text-align: left;
+    padding: 5vh;
+    background-color: #f03613;
+    color: whitesmoke;
+}
+
+#legumesection1txt h1 {
+    font-size: 6vh;
+    margin-bottom: 2vh;
+}
+
+.legumeart {
+    color: whitesmoke;
+    padding: 12vh;
+}
+
+#legumeart1 {
+    background-color: #0b3d22;
+}
+
+#legumeart2 {
+    background-color: #104a2b;
+}
+
+#legumeart3 {
+    background-color: #145c36;
+}
 
