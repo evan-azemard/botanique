@@ -5,16 +5,89 @@
         <meta name="description" content="site sur la botanique urbaine">
         <meta name="author" content="Evan et Fabio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="botanique.css">
+        <link rel="stylesheet" type="text/css" href="botanique.css">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"><!--Font for Title-->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"><!-- Font for header-->
+        <script src="https://use.fontawesome.com/25ce7b82b1.js"></script>
+        <link rel="shortcut icon" href="image/pot.png">
+        <title>Arbustes</title>
     </head>
-    <body>
-        <header>
+    <body id="bodyarbustes">
+    	<header>
+    		<div class="sectiondiv">
+	            <div id="déroul" class="DEL">
+					<a href="javascript:void(0)" class="fermer" onclick="closeNav()">&times;</a>
+					<a href="acceuil.html">Acceuil</a>
+					<a href="presentation.html">Présentation</a>
+					<a href="fleurs.html">Fleurs</a>
+					<a href="arbustes.html">Arbustes</a>
+					<a href="legumes.html">Légumes</a>
+					<a href="plantes.html">Plantes</a>
+				</div>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+					<script>
+					function openNav() {
+					  document.getElementById("déroul").style.width = "250px";
+					}
+					function closeNav() {
+					  document.getElementById("déroul").style.width = "0";
+					} 
+				</script>          
+    		</div>
+    		<section id="cadretitre">
+    			<div id="cadreparagraphe">
+    				<a href="acceuil.html">
+    					<h1>Fleurs de villes. </h1>
+    				</a>
+    			</div>
+    		</section>
+    		<section id="connexion">
+    			<nav id="ongletconnexion">
+    				<a href="#">Créer un compte</a>
+    				<a href="#">Connexion</a>
+    				<a href="#">Mot de de passe oublié </a>
+    			</nav>	
+    		</section>
+    	</header>
+    	<main id="mainarbustes">
+    		<section id="section1arbustes">
+    			<div id="divsection1arbustes">
+    			</div>
+    		</section>
+    		<section class="sectionflex">
+    			<div id="div1section2a">
+    				<p>En botanique, l’ arbuste se distingue de l' arbre ou de l' arbrisseau. Il désigne une plante ligneuse d'une taille entre 4 et 7 mètres à l'état adulte, à la différence de l'arbre qui fait plus de 7 mètres à l'état adulte. Dans le parler populaire, le terme « arbrisseau » est souvent considéré comme un synonyme d’« arbuste ».</p>
+    			</div>
+    			<div id="div2section2a">
+    				<div class="divdiv2">
+    						<img src="https://i.pinimg.com/originals/b5/22/b7/b522b746e00fd67b32536dbaafdc2a10.jpg" alt="arbustes">
+    						<p>Jusqu’à il y a environ une vingtaine d’année, les arbustes d’ornement étaient cultivés en pleine terre dans les pépinières.<a href="https://www.blog-ecolo.fr/tout-savoir-sur-les-arbustes.html" target="_blank">Clique</a></p>
+    				</div>
+    				<div class="divdiv2">
+    				
+    						<img src="http://1.bp.blogspot.com/_tVNFIhjlFDg/TBACRqcks3I/AAAAAAAABAM/jXoTSaEpUKs/s1600/Bl%C3%BChender+Strauch+auf+Blumenwiese.jpg" alt="arbre de judé">
+    				
+    						<p>L’arbre de Judée, un grand arbuste qui fleurit généreusement au printemps et dont la taille permet de le planter dans les jardins de petite taille.<a href="https://conseils-jardin.willemsefrance.fr/tout-savoir-sur-les-arbres-et-arbustes/" target="_blank">Clique</a></p>
+    				
+    				</div>
+    			</div>
+    		</section>
+    		<section id="section3arbustes">
+    			<article id="avant">
+    				<img src="https://i.pinimg.com/originals/26/b3/fe/26b3fe9eef06c2d428c30f7bd5ddc21c.png" alt="arbre">
+    			</article>
+    			<article id="dernier">
+    				<p>Superbes coloris d'automne. Ecorce décorative mais moins que griseum. Arbuste originaire d'Argentine de 2 mètres de haut. Superbe floraison bleue en clochettes en mai-juin.Acer (érable, ahorn) est un genre d'arbres et arbustes à feuilles caduques , ce genre est classé dans la famille des Sapindaceae ( Sapindales) . Le genre comprend environ 120 espèces de Acer , principalement originaire des régions tempérées et climats humides dans l' hémisphere nord.
 
-        </header>
-        <main>
-            
-        </main>
-        <footer>
+					La pluspart des érables ont des feuilles simples, dentées ou lobées sur des tiges minces, posés par paires opposées l'une à l'autre.
+
+					En Belgique seul le érable champêtre ( Acer campestre) et érable sycomore (Acer pseudoplatanus) sont indigènes.
+
+					La pluspart des érables ont une grande valeur ornementale en particulier les décolorations d'automne du feuillage sont énormement populaires.</p>
+    			</article>
+    		</section>
+    	</main>
+    	<footer>
             <form action="#" id="newsform">
                 <label for="newsinput">Envie de recevoir notre newsletter ?</label>
                 <div>
