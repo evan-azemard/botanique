@@ -135,6 +135,12 @@ footer{
 	font-family: 'Dancing Script', cursive;
 }
 
+#section2fleurs img{
+	background-attachment: fixed;
+	background-image: url(https://images.theconversation.com/files/207473/original/file-20180222-152363-eevm40.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip);
+
+}
+
 #bodyacceuil a{
 	text-decoration: underline;
 }
