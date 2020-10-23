@@ -5,32 +5,76 @@
         <meta name="description" content="site sur la botanique urbaine">
         <meta name="author" content="Evan et Fabio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="botanique.css">
+        <link rel="stylesheet" type="text/css" href="botanique.css">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"><!--Font for Title-->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"><!-- Font for header-->
+        <script src="https://use.fontawesome.com/25ce7b82b1.js"></script>
+        <link rel="shortcut icon" href="image/pot.png">
+        <title>plantes</title>
     </head>
     <body>
 
         <header>
-
+    		<div class="sectiondiv">
+	            <div id="déroul" class="DEL">
+					<a href="javascript:void(0)" class="fermer" onclick="closeNav()">&times;</a>
+					<a href="accueil.html">Accueil</a>
+					<a href="presentation.html">Présentation</a>
+					<a href="fleurs.html">Fleurs</a>
+					<a href="arbustes.html">Arbustes</a>
+					<a href="legumes.html">Légumes</a>
+					<a href="plantes.html">Plantes</a>
+				</div>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+					<script>
+					function openNav() {
+					  document.getElementById("déroul").style.width = "250px";
+					}
+					function closeNav() {
+					  document.getElementById("déroul").style.width = "0";
+					} 
+				</script>          
+    		</div>
+    		<section id="cadretitre">
+    			<div id="cadreparagraphe">
+    				<a href="acceuil.html">
+    					<h1>Fleurs de villes. </h1>
+    				</a>
+    			</div>
+    		</section>
+    		<section id="connexion">
+    			<nav id="ongletconnexion">
+    				<a href="#">Créer un compte</a>
+    				<a href="#">Connexion</a>
+    				<a href="#">Mot de de passe oublié </a>
+    			</nav>	
+    		</section>
         </header>
 
-        <main>
-            <section>
-                <h1>Ces plantes qui poussent en plein millieu urbain</h1>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <article>
-                    <h2>Les arbustes</h2>
-                    <img src="#" alt="">
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <main id="plantesmain">
+            <section id="plantessection">
+                <h1 id="plantestitle">Ces plantes qui poussent en plein millieu urbain</h1>
+                <p id="plantessubtitle">Alors que 50 % des terriens sont devenus urbains et que cette part pourrait atteindre 60 % en 2030, les espaces verts et les jardins communautaires ou privés urbains deviennent des composantes de plus en plus importantes des enjeux de l'urbanisme, de la santé publique, de l'alimentation et du bien-vivre</p>
+                <article class="plantesart plantesart1">
+                    <img src="images/arb.jpg" alt="">
+                    <div class="plantestext">
+                        <a href="arbustes.html"><h2>Les arbustes</h2></a>
+                        <p>En botanique, l’ arbuste se distingue de l' arbre ou de l' arbrisseau. Il désigne une plante ligneuse d'une taille entre 4 et 7 mètres à l'état adulte, à la différence de l'arbre qui fait plus de 7 mètres à l'état adulte. Dans le parler populaire, le terme « arbrisseau » est souvent considéré comme un synonyme d’« arbuste ». Jusqu’à il y a environ une vingtaine d’année, les arbustes d’ornement étaient cultivés en pleine terre dans les pépinières.</p>
+                    </div>
                 </article>
-                <article>
-                    <h2>Les fleurs</h2>
-                    <img src="#" alt="">
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <article class="plantesart plantesart2">
+                    <img src="images/img18acc.JPG" alt="">
+                    <div class="plantestext">
+                        <a href="fleurs.html"><h2>Les fleurs</h2></a>
+                        <p>En biologie, chez toutes sortes de plantes à fleurs (angiospermes), la fleur constitue l'organe de la reproduction sexuée et l'ensemble des « enveloppes » qui l'entourent. Après la pollinisation, la fleur est fécondée et se transforme en fruit contenant les graines. Les fleurs peuvent être solitaires, mais elles sont le plus souvent regroupées en inflorescences.</p>
+                    </div>
                 </article>
-                <article>
-                    <h2>Les légumes</h2>
-                    <img src="#" alt="">
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                    
+                <article class="plantesart plantesart1">
+                    <img src="images/legumes.jpg" alt="">
+                    <div class="plantestext">
+                        <a href="legumes.html"><h2>Les légumes</h2></a>
+                        <p>Un légume est la plante ou une partie comestible d'une espèce potagère. Cette définition, reprise par la plupart des dictionnaires de langue française, doit être étendue aux champignons comestibles, dont certains sont cultivés (champignon de Paris, shiitaké, etc.) et à certaines algues, dont la consommation est la plus développée en Extrême-Orient.</p>
+                    </div>
                 </article>
             </section>
         </main>

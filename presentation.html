@@ -5,19 +5,63 @@
         <meta name="description" content="site sur la botanique urbaine">
         <meta name="author" content="Evan et Fabio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="botanique.css">
+        <link rel="stylesheet" type="text/css" href="botanique.css">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"><!--Font for Title-->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"><!-- Font for header-->
+        <script src="https://use.fontawesome.com/25ce7b82b1.js"></script>
+        <link rel="shortcut icon" href="image/pot.png">
+        <title>presentation</title>
     </head>
     <body id="presentationbody">
-        <header>
-
-        </header>
+    	<header>
+    		<div class="sectiondiv">
+		        <div id="déroul" class="DEL">
+					  <a href="javascript:void(0)" class="fermer" onclick="closeNav()">&times;</a>
+					  <a href="accueil.html">Accueil</a>
+					  <a href="presentation.html">Présentation</a>
+					  <a href="fleurs.html">Fleurs</a>					 
+					  <a href="arbustes.html">Arbustes</a>
+					  <a href="legumes.html">Légumes</a>
+					  <a href="plantes.html">Plantes</a>
+				</div>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+				<script>
+				function openNav() {
+				  document.getElementById("déroul").style.width = "250px";
+				}
+				function closeNav() {
+				  document.getElementById("déroul").style.width = "0";
+				} 
+				</script>          
+    		</div>
+    		<section id="cadretitre">
+    			<div id="cadreparagraphe">
+    				<a href="accueil.html">
+    					<h1>Fleurs de villes. </h1>
+    				</a>
+    			</div>
+    		</section>
+    		<section id="connexion">
+    			<nav id="ongletconnexion">
+    				<a href="#">Créer un compte</a>
+    				<a href="#">Connexion</a>
+    				<a href="#">Mot de de passe oublié </a>
+    			</nav>	
+    		</section>
+    	</header>
         <main id="presentationmain">
             <section id="presentationsection1">
                 <div>
                     <img id="presentationimg" src="images/vaso.jpg" alt="">
                     <div id="presentationtext">
                         <h1>Salut !</h1>
-                        <p>Nous sommes <span>Fleurs de Ville</span>, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Nous sommes <span>Fleurs de Ville</span>, une association créee sous l'inspiration du poème "La fleur et la nausée", écrit par le poète brésilien Carlos Drummond de Andrade. Voici le morceau du poème qui a declanché notre motivation:<br/>
+                            "Une fleur est née dans la rue !<br/>
+                            Eloignez-vous, tramways, bus, fleuve d'acier des voitures.<br/>
+                            Une fleur encore frêle <br/>
+                            déjoue la police, fissure l'asphalte. <br/>
+                            Silence, je vous prie, arrêtez vos affaires, <br/>
+                            je jure qu'une fleur vient de naître."</p>
                     </div>
                 </div>               
             </section>
@@ -26,13 +70,13 @@
                 <article class="fondateurbox">
                     <img class="imgfondateur" src="images/evan.jpg" alt="evan azemard">
                     <h3>Evan Azemard</h3>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Passionné de la pâtisserie et du CSS, il n'a jamais peur de mettre ses mains à la pâte avec une hardiesse qui défit les pouvoirs de git.</p>
                     <a href="#">en savoir plus</a>
                 </article>
                 <article class="fondateurbox">
                     <img class="imgfondateur" src="images/fabio.jpg" alt="fabio tenorio">
                     <h3>Fabio Tenorio</h3>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Passionné du HTML, il essaye de mettre des balises partout, mais la vie - et git push - lui cachent toujours des surprises.</p>
                     <a href="#">en savoir plus</a>
                 </article>
             </section>
