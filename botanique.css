@@ -20,6 +20,115 @@ button {
 }
 
 /* le style pour le header en commun */
+header{
+	background: #F9BFB4; /* fallback color if gradients are not supported*/ 
+	background: -webkit-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -moz-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -o-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	height: 9vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5vw;
+	flex-shrink: 0;
+}
+
+
+.DEL {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  rgba(253, 243, 209, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.DEL a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.DEL a:hover {
+  color: black;
+}
+
+.DEL .fermer {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .DEL {padding-top: 15px;}
+  .DEL a {font-size: 18px;}
+}
+
+
+
+
+
+#cadreparagraphe a{
+	color: black;
+}
+
+
+#cadretitre{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+
+#cadreparagraphe{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 2vw;
+	height: 54%;
+	width: 100%;
+	font-family: 'Parisienne', cursive;
+	margin-left: 35%;
+}
+
+#cadreparagraphe h1{
+	margin-top: 9.5%;
+}
+
+
+#connexion{
+	width: 30%;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#connexion a:hover{
+	color: white;
+	transition: 0.2s;
+}
+#ongletconnexion{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+#ongletconnexion a{
+	color: black;
+}
+
+
 
 /* le style pour le footer en commun */
 
@@ -84,10 +193,227 @@ footer {
 .imgicon {
     width: 25px;
     padding: 10px 10px;
+footer{
+	background-color: orange;
+	height: 10%;
+	flex-shrink: 0
 }
 
 /* le style pour accueil.html */
 
+#bodyacceuil{
+	margin: 0;
+	padding: 0;
+	background: #F9BFB4; /* fallback color if gradients are not supported*/ 
+	background: -webkit-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -moz-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -o-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Dancing Script', cursive;
+}
+
+#section2fleurs img{
+	background-attachment: fixed;
+	background-image: url(https://images.theconversation.com/files/207473/original/file-20180222-152363-eevm40.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip);
+
+}
+
+#bodyacceuil a{
+	text-decoration: underline;
+}
+
+#imagearticle1a img{
+	height: 100%;
+	width: 100%;
+}
+
+#mainacceuil{
+	margin-top: 5%;
+	flex-grow: 1;
+}
+
+#margins{
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-top: 15%;
+	margin-bottom: 15%;
+	margin-left: 15%;
+	margin-right: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#section1acceuil{
+	background-color: rgba(249, 191, 180, 0.4);
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#imagearticle1acceuil{
+	width: 55%;
+	height: 50vh;
+	margin-left: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#imagearticle1a{
+	height: 85%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#textimagearticle1acceuil{
+	background-color: rgba(249, 191, 180, 0.4);
+	width: 40%;
+	height: 42.7vh;
+	margin-right: 2%;
+	margin-top: 2.7%;
+	margin-bottom: 1.5%;
+}
+
+#textimagearticle1acceuil p{
+	font-size: 2.7vh;
+	margin-left: 1%;
+}
+
+
+#section2acceuil{
+	background-color: rgba(249, 191, 180,);
+	height: 50vh;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#section3acceuil{
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 50vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.traitacceuil{
+	color: transparent;
+	height: 0.2vh;
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.lignetraitacceuil1{
+	background-color: black;
+	width: 30%;
+}
+
+#imagetext1section3{
+	width: 125%;
+	margin-left: 2%;
+	margin-bottom: 1%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#imagetext2section3{
+	width: 125%;
+	margin-right: 0.2%;
+	margin-bottom: 1%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#contenue1section3{
+	background-color: rgba(249, 191, 180, 0.4);
+	height: 40%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#contenue1section3 img{
+	height: 100%;
+	width: 100%;
+}
+
+#contenue2section3{
+	background-color: rgba(249, 191, 180, 0.4);
+	height: 55%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#contenue2section3 p{
+	margin-left: 1%;
+	font-size: 2.1vh;
+}
+
+#contenue3section3{
+	background-color: rgba(249, 191, 180, 0.4);
+	width: 32%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#contenue3section3 p{
+	margin-left: 1%;
+	font-size: 2.3vh;
+}
+#contenue4section3 img{
+	height: 100%;
+	width: 100%;
+}
+
+#contenue4section3{
+	background-color: rgba(249, 191, 180, 0.4);
+	width: 65%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.trait2acceuil{
+	background-color: black;
+	color: transparent;
+	height: 0.2vh;
+	width: 25%;
+	display: flex;
+	vertical-align: middle;
+	margin-top: 18%;
+	margin-bottom: 2%;
+	transform:rotate( 90deg);
+}
+
+.lignetrait2acceuil1{
+	width: 5%;
+}
+
+table{
+	width: 100%;
+}
+
+table img:hover{
+    -moz-transform: scale(2.06);
+    -webkit-transform: scale(2.06);
+    transform: scale(2.06);
+}
+
+
+
+.THeadText{
+    width:25%;
+}
+
+table img{
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 1.2s;
+}
 /* le style pour presentation.html */
 
 #presentationbody {
@@ -264,8 +590,296 @@ footer {
 /* le style pour plantes.html */
 
 /* le style pour fleurs.html */
+#bodyfleurs{
+	margin: 0;
+	padding: 0;
+	background: #F9BFB4; /* fallback color if gradients are not supported*/ 
+	background: -webkit-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -moz-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -o-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Dancing Script', cursive;
+}
+
+#mainfleurs{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 270vh;
+
+}
+
+#section1fleurs{
+	background-color: white;
+	height: 70vh;
+	margin-top: 15%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#div1fleurs{
+
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#div2fleurs{
+
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#div3fleurs{
+
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#aa1 a{
+	text-decoration: none;
+	font-size: 5vh;
+	color: black;
+}
+
+#aa1 a:hover{
+	color: green;
+}
+#aa1{
+
+	height: 15%;
+	display: flex;
+	justify-content: center;
+
+}
+
+#aa2{
+
+	height: 70%;
+	font-size: 2vh;
+
+}
+
+#aa2 img{
+	width: 100%;
+}
+#aa3{
+
+	height: 15%;
+	display: flex;
+	justify-content: center;
+}
+#aa4 img{
+	width: 100%;
+}
+#aa3 a{
+	text-decoration: none;
+	font-size: 5vh;
+	color: black;
+}
+
+#aa3 a:hover{
+	color: green;
+}
+#aa4{
+
+	height: 70%;
+	font-size: 2vh;
+}
+
+#aa5{
+
+	height: 15%;
+	display: flex;
+	justify-content: center;
+}
+#aa5 a{
+	text-decoration: none;
+	font-size: 5vh;
+	color: black;
+}
+
+#aa5 a:hover{
+	color: green;
+}
+
+#aa6{
+
+	height: 70%;
+	font-size: 2vh;
+}
+
+#aa6 img{
+	width: 100%;
+}
+#section2fleurs{
+	margin-top: 10%;
+	height: 35%;
+}
+
+#section2fleurs img{
+	width: 100%;
+	height: 70%;
+}
+
+#section3fleurs{
+	background-color: white;
+	height: 28%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%
+}
+
+#section3fleurs img{
+	width: 100%;
+	height: 100%;
+}
+#legfleurs{
+	margin-left: 2%;
+	width: 50%;
+}
+
+#parafleur{
+	width: 40%;
+	font-size: 4vh;
+	margin-right: 1%;
+}
+
+
 
 /* le style pour arbustes.html */
+
+#bodyarbustes{
+	margin: 0;
+	padding: 0;
+	background: #F9BFB4; /* fallback color if gradients are not supported*/ 
+	background: -webkit-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -moz-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: -o-linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	background: linear-gradient(-131deg,#F9BFB4 9%, #DFF6F0 49%, #FFF3CF 100%, #E8F6DA);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Dancing Script', cursive;
+}
+
+#bodyarbustes a{
+	text-decoration: underline;
+
+}
+
+#mainarbustes{
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 260vh;
+}
+
+#section1arbustes{
+	width: 100%;
+	height: 30%;
+}
+
+#divsection1arbustes{
+	background-image: url(https://static8.depositphotos.com/1000124/855/i/950/depositphotos_8559840-stock-photo-forest-trees-nature-green-wood.jpg);
+	background-attachment: fixed;
+	height: 85%;
+}
+
+.sectionflex{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 30%;
+}
+
+
+
+#div1section2a{
+	height: 20%;
+	margin-top: -5%;
+}
+
+#div1section2a p{
+	color: black;
+	font-size: 3vh;
+	margin-left: 0.5%;
+}
+#div2section2a{
+	margin-top: 2%;
+	height: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.divdiv2{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.divdiv2 article{
+	width: 100%;
+	height: 60%;
+}
+
+.divdiv2 p{
+	font-size: 3vh;
+}
+.article1divdiv1{
+	height: 90%;
+}
+
+
+.divdiv2 img{
+	width: 86vh;
+	height: 45vh;
+}
+
+.article2divdiv1{
+	height: 70%;
+	/*margin-top: 22%;*/
+	font-size: 3vh;
+}
+
+
+#section3arbustes{
+
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#avant{
+	height: 75%;
+}
+
+#avant img{
+	width: 80%;
+	height: 95%;
+	margin-top: 5%;
+	margin-left: 10%;
+}
+#dernier{
+	height: 20%;
+	font-size: 2.8vh;
+	margin-bottom: 3%;
+	margin-top: 2%;
+
+}
 
 /* le style pour legumes.html */
 
