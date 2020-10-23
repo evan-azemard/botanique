@@ -117,7 +117,7 @@ footer {
 }
 
 #presentationtext {
-    padding: 30vh 52vh;
+    padding: 25vh 40vh;
     text-align: center;
 }
 
@@ -152,7 +152,7 @@ footer {
     justify-content: space-around;
     padding: 10vh 0;
     background-color: #edc02c;
-    color: whitesmoke;
+    color:#05180e;
 }
 
 #fondateursection h2 {
@@ -278,11 +278,12 @@ footer {
     padding-top: 40vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #legumesection1img {
     padding: 0;
+    width: 40%;
 }
 
 #legumesection1txt {
@@ -290,6 +291,8 @@ footer {
     padding: 5vh;
     background-color: #f03613;
     color: whitesmoke;
+    width: inherit;
+    flex-grow: 2;
 }
 
 #legumesection1txt h1 {
@@ -300,10 +303,44 @@ footer {
 .legumeart {
     color: whitesmoke;
     padding: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.legumeart h2 {
+    margin-bottom: 5vh;
+    font-size: 5vh;
+    text-align: left;
 }
 
 #legumeart1 {
     background-color: #0b3d22;
+}
+
+#astucesvideoboxes {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.astucesvideo {
+    margin: 5vh 0;
+    padding: 3vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 15px 6px rgba(11,61,34,1);
+    background-color: #104a2b;
+}
+
+.astucesvideo legende {
+    margin-top: 2vh;
+    font-size: 3vh;
 }
 
 #legumeart2 {
@@ -314,3 +351,31 @@ footer {
     background-color: #145c36;
 }
 
+.legumedumois {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 1px 3px 15px 6px rgba(11,61,34,1);
+    background-color: whitesmoke;
+    color: #f03613;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 28vh;
+    height: 30vh;
+    text-transform: uppercase;
+}
+
+.legumedumois img {
+    width: 20vh;
+    height: 20vh;
+    margin-bottom: 30px;
+}
+
+#legumedumoisboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
