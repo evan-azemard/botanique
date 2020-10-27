@@ -1,5 +1,24 @@
 /* le style en commun pour toutes les pages */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+* a:visited {
+    color: inherit;
+}
+
 /* le style pour le header en commun */
 header{
 	background: #F9BFB4; /* fallback color if gradients are not supported*/ 
@@ -113,15 +132,77 @@ header{
 
 /* le style pour le footer en commun */
 
-footer{
-	background-color: orange;
-	height: 10%;
-	flex-shrink: 0
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 10vh 0;
+    width: 100%;
+    background-color: #27b46a;
+	color: #05180e;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5em;
+}
+
+#newsform {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsform label {
+    margin-bottom: 11px;
+}
+
+#newsinput, #newsbutton {
+    padding: 6px 6px;
+    border-radius: 3px;
+    border: 1px solid #104a2b;
+}
+
+#newsinput {
+	color: #0b3d22;
+	font-family: cursive;
+}
+
+#newsbutton:hover, #newsinput:hover {
+    box-shadow: 1px 2px 3px #0b3d22;
+}
+
+#newsbutton {
+    background-color: #0b3d22;
+	color: whitesmoke;
+	font-family: 'Monospace', sans-serif;
+}
+
+.footerlist {
+    list-style: none;
+}
+
+.footerlisttitle {
+	font-family: 'Parisienne', cursive;
+    font-weight: bold;
+}
+
+.imglogopartner {
+    width: 100px;
+}
+
+#footerimgsocial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imgicon {
+    width: 25px;
+    padding: 10px 10px;
 }
 
 /* le style pour accueil.html */
 
-#bodyacceuil{
+#bodyaccueil{
 	margin: 0;
 	padding: 0;
 	background: #F9BFB4; /* fallback color if gradients are not supported*/ 
@@ -141,8 +222,10 @@ footer{
 
 }
 
-#bodyacceuil a{
-	text-decoration: underline;
+#bodyaccueil a{
+	/* text-decoration: underline; */
+
+	/* j'enlève cela pour donner aux liens le même style adopté dans les autres pages */
 }
 
 #imagearticle1a img{
@@ -150,7 +233,7 @@ footer{
 	width: 100%;
 }
 
-#mainacceuil{
+#mainaccueil{
 	margin-top: 5%;
 	flex-grow: 1;
 }
@@ -166,14 +249,14 @@ footer{
 	justify-content: space-around;
 }
 
-#section1acceuil{
+#section1accueil{
 	background-color: rgba(249, 191, 180, 0.4);
 	height: 50%;
 	display: flex;
 	justify-content: space-between;
 }
 
-#imagearticle1acceuil{
+#imagearticle1accueil{
 	width: 55%;
 	height: 50vh;
 	margin-left: 2%;
@@ -190,7 +273,7 @@ footer{
 	margin-right: 1%;
 }
 
-#textimagearticle1acceuil{
+#textimagearticle1accueil{
 	background-color: rgba(249, 191, 180, 0.4);
 	width: 40%;
 	height: 42.7vh;
@@ -199,27 +282,27 @@ footer{
 	margin-bottom: 1.5%;
 }
 
-#textimagearticle1acceuil p{
+#textimagearticle1accueil p{
 	font-size: 2.7vh;
 	margin-left: 1%;
 }
 
 
-#section2acceuil{
+#section2accueil{
 	background-color: rgba(249, 191, 180,);
 	height: 50vh;
 	margin-left: 2%;
 	margin-right: 2%;
 }
 
-#section3acceuil{
+#section3accueil{
 	background-color: rgba(255, 255, 255, 0.5);
 	height: 50vh;
 	display: flex;
 	justify-content: space-between;
 }
 
-.traitacceuil{
+.traitaccueil{
 	color: transparent;
 	height: 0.2vh;
 	display: flex;
@@ -228,7 +311,7 @@ footer{
 	margin-bottom: 2%;
 }
 
-.lignetraitacceuil1{
+.lignetraitaccueil1{
 	background-color: black;
 	width: 30%;
 }
@@ -296,7 +379,7 @@ footer{
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-.trait2acceuil{
+.trait2accueil{
 	background-color: black;
 	color: transparent;
 	height: 0.2vh;
@@ -308,7 +391,7 @@ footer{
 	transform:rotate( 90deg);
 }
 
-.lignetrait2acceuil1{
+.lignetrait2accueil1{
 	width: 5%;
 }
 
@@ -336,7 +419,267 @@ table img{
 }
 /* le style pour presentation.html */
 
+#presentationbody {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#presentationmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#presentationsection1 {
+    color: #1f1f1f;
+    font-size: 5vh;
+}
+
+#presentationsection1 div {
+    height: 180vh;
+    background-color: rgba(255, 255, 100, 0.4);
+    z-index: 1;
+}
+
+#presentationtext {
+    padding: 25vh 35vh;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+#presentationtext span {
+	color: orangered;
+	font-weight: bold;
+	font-family: 'Parisienne', cursive;
+}
+
+#presentationtext h1 {
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+#presentationimg {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: -1;
+}
+
+.imgfondateur {
+    width: 20vh;
+    height: 35vh;
+    border-radius: 8px;
+    margin-bottom: 13px;
+}
+
+#fondateursection {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "title title"
+                         "box box";
+    justify-content: space-around;
+    padding: 10vh 0;
+    background-color: #edc02c;
+	color:#05180e;
+	font-family: 'Dancing Script', cursive;
+	font-size: 3vh;
+}
+
+#fondateursection h2 {
+    grid-area: title;
+    text-align: center;
+    margin-bottom: 8vh;
+    font-size: 8vh;
+}
+
+.fondateurbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vh;
+    background-color: #d5ac28;
+    padding: 20px;
+	border-radius: 8px;
+	font-size: 5vh;
+}
+
+.fondateurbox p {
+	text-align: center;
+	font-size: 4vh;
+	margin-top: 13px;
+}
+
+.fondateurbox a {
+    color: inherit;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #bd9924;
+	transition: background-color 80ms;
+	font-size: 4vh;
+}
+
+.fondateurbox a:hover {
+    background-color: #a5861f;
+    box-shadow: 2px 3px 4px #8e731b;
+    font-weight: bold;
+}
+
+#contactsection {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10vh 0;
+    background-color: #f3e2b3;
+	color: #2e2e2c;
+	font-family: 'Dancing Script', cursive;
+}
+
+#contactsection h3 {
+    margin-bottom: 2vh;
+    font-size: 7vh;
+}
+
+#contactsection a {
+	color: blue;
+	font-family: 'Monospace', sans-serif;
+	font-size: 4vh;
+}
+
+#contactsection label {
+	font-size: 4vh;
+	margin: 20px 0;
+}
+
+#petitmot {
+    color: #2e2e2c;
+    font-size: 2vh;
+    border-radius: 8px;
+    padding: 10px;
+	border: 2px solid #e9c971;
+	font-family: 'Dancing Script', cursive;
+	font-size: 4vh;
+}
+
+#mapsection {
+    background-color: #a2eeeb;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+#mapsection h3 {
+    font-size: 7vh;
+    color: #5c5b58;
+}
+
+#presentationpartners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+	height: 60vh;
+}
+
+#presentationpartners h3 {
+    margin-bottom: 2vh;
+    font-size: 7vh;
+	color: #2e2e2c;
+	font-family: 'Dancing Script', cursive;
+}
+
+#logopartners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 60%;
+    height: 80%;
+    padding: 10vh 0;
+}
+
+.imglogopartner {
+    margin: 10px 20px;
+    width: 20vh;
+    height: 9vh;
+}
+
 /* le style pour plantes.html */
+
+#plantesmain {
+	padding-top: 20vh;
+	font-family: 'Dancing Script', cursive;
+	font-size: 4vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+#plantessection {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#plantestitle {
+	text-align: center;
+}
+
+#plantessubtitle {
+	margin-bottom: 10vh;
+	width: 60%;
+	text-align: center;
+}
+
+.plantesart {
+	padding: 6vh;
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(253, 243, 209, 0.8);
+	color: rgba(11,61,34,1);
+}
+
+.plantestext {
+	padding: 0 30px;
+	text-align: left;
+	width: 100%;
+	border: 1px solid gray;
+	border-radius: 2px;
+	padding: 20px 15px;
+	transition: color 1s;
+}
+
+.plantestext:hover {
+	box-shadow: 1px 3px 15px 6px gray;
+}
+
+.plantestext a:hover {
+	color: #960018;
+}
+
+.plantesart2 {
+	flex-direction: row-reverse;
+}
+
+.plantesart img {
+	width: 330px;
+	height: 240px;
+}
 
 /* le style pour fleurs.html */
 #bodyfleurs{
@@ -521,8 +864,9 @@ table img{
 }
 
 #bodyarbustes a{
-	text-decoration: underline;
+	/* text-decoration: underline; */
 
+	/* je fait ici la même chose que j'ai fait avec le style de la balise <a> de fleurs.html */
 }
 
 #mainarbustes{
@@ -632,3 +976,170 @@ table img{
 
 /* le style pour legumes.html */
 
+#legumebody {
+	background-color: #f3e2b3;
+	font-family: 'Dancing Script', cursive;
+}
+
+#legumemain {
+	font-size: 4vh;
+}
+
+#legumesection1 {
+    width: 100%;
+    padding-top: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#legumesection1img {
+    padding: 0;
+    width: 40%;
+}
+
+#legumesection1txt {
+    text-align: left;
+    padding: 5vh;
+    background-color: #960018;
+    color: whitesmoke;
+    width: inherit;
+	flex-grow: 2;
+}
+
+#legumesection1txt h1 {
+    font-size: 7vh;
+    margin-bottom: 2vh;
+}
+
+.legumeart {
+    color: whitesmoke;
+    padding: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.legumeart h2 {
+    margin-bottom: 5vh;
+    font-size: 7vh;
+    text-align: left;
+}
+
+#legumeart1 {
+    background-color: #0b3d22;
+}
+
+#astucesvideoboxes {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.astucesvideo {
+    margin: 5vh 0;
+    padding: 3vh;
+    border-radius: 5px;
+    display: flex;
+	flex-direction: column;
+	transition: box-shadow 80ms;
+    box-shadow: 1px 3px 15px 6px rgba(11,61,34,1);
+    background-color: #104a2b;
+}
+
+.astucesvideo:hover {
+	box-shadow: 1px 3px 15px 6px gray;
+}
+
+.astucesvideo legende {
+    margin-top: 2vh;
+    font-size: 4vh;
+}
+
+#legumeart2 {
+    background-color: #104a2b;
+}
+
+#outilboxes {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: baseline;
+}
+
+.outilbox {
+	padding: 20px;
+}
+
+.outilbox img {
+	width: 40vh;
+	height: 40vh;
+	border-radius: 8px;
+}
+
+.outilbox img:hover {
+	opacity: 0.7;
+}
+
+.outilbox button {
+	padding: 10px;
+	margin: 13px 0;
+	border: 1px solid rgba(11,61,34,1);
+	border-radius: 5px;
+	font-family: 'Monospace', sans-serif;
+	font-size: 3vh;
+	color:whitesmoke;
+	background-color: #960018;
+	transition: box-shadow 80ms;
+}
+
+.outilbox button:hover {
+	box-shadow: 1px 3px 15px 6px gray;
+}
+
+#legumeart3 {
+    background-color: #145c36;
+}
+
+.legumedumois {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 1px 3px 15px 6px rgba(11,61,34,1);
+    background-color: whitesmoke;
+    color: #f03613;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 28vh;
+    height: 30vh;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	transition: width 70ms, height 70ms;
+}
+
+.legumedumois:hover {
+	width: 32vh;
+	height: 34vh;
+	z-index: 1;
+}
+
+.legumedumois img {
+    width: 20vh;
+    height: 20vh;
+    margin-bottom: 30px;
+}
+
+#legumedumoisboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}

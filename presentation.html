@@ -5,9 +5,141 @@
         <meta name="description" content="site sur la botanique urbaine">
         <meta name="author" content="Evan et Fabio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="botanique.css">
+        <link rel="stylesheet" type="text/css" href="botanique.css">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"><!--Font for Title-->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"><!-- Font for header-->
+        <script src="https://use.fontawesome.com/25ce7b82b1.js"></script>
+        <link rel="shortcut icon" href="image/pot.png">
+        <title>presentation</title>
     </head>
-    <body>
-
+    <body id="presentationbody">
+    	<header>
+    		<div class="sectiondiv">
+		        <div id="déroul" class="DEL">
+					  <a href="javascript:void(0)" class="fermer" onclick="closeNav()">&times;</a>
+					  <a href="accueil.html">Accueil</a>
+					  <a href="presentation.html">Présentation</a>
+					  <a href="fleurs.html">Fleurs</a>					 
+					  <a href="arbustes.html">Arbustes</a>
+					  <a href="legumes.html">Légumes</a>
+					  <a href="plantes.html">Plantes</a>
+				</div>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+				<script>
+				function openNav() {
+				  document.getElementById("déroul").style.width = "250px";
+				}
+				function closeNav() {
+				  document.getElementById("déroul").style.width = "0";
+				} 
+				</script>          
+    		</div>
+    		<section id="cadretitre">
+    			<div id="cadreparagraphe">
+    				<a href="accueil.html">
+    					<h1>Fleurs de villes. </h1>
+    				</a>
+    			</div>
+    		</section>
+    		<section id="connexion">
+    			<nav id="ongletconnexion">
+    				<a href="#">Créer un compte</a>
+    				<a href="#">Connexion</a>
+    				<a href="#">Mot de de passe oublié </a>
+    			</nav>	
+    		</section>
+    	</header>
+        <main id="presentationmain">
+            <section id="presentationsection1">
+                <div>
+                    <img id="presentationimg" src="images/vaso.jpg" alt="">
+                    <div id="presentationtext">
+                        <h1>Salut !</h1>
+                        <p>Nous sommes <span>Fleurs de Ville</span>, une association créee sous l'inspiration du poème "La fleur et la nausée", écrit par le poète brésilien Carlos Drummond de Andrade. Voici le morceau du poème qui a declanché notre motivation:<br/>
+                            "Une fleur est née dans la rue !<br/>
+                            Eloignez-vous, tramways, bus, fleuve d'acier des voitures.<br/>
+                            Une fleur encore frêle <br/>
+                            déjoue la police, fissure l'asphalte. <br/>
+                            Silence, je vous prie, arrêtez vos affaires, <br/>
+                            je jure qu'une fleur vient de naître."</p>
+                    </div>
+                </div>               
+            </section>
+            <section id="fondateursection">
+                <h2>Les fondateurs</h2>
+                <article class="fondateurbox">
+                    <img class="imgfondateur" src="images/evan.jpg" alt="evan azemard">
+                    <h3>Evan Azemard</h3>
+                    <p>Passionné de la pâtisserie et du CSS, il n'a jamais peur de mettre ses mains à la pâte avec une hardiesse qui défit les pouvoirs de git.</p>
+                    <a href="#">en savoir plus</a>
+                </article>
+                <article class="fondateurbox">
+                    <img class="imgfondateur" src="images/fabio.jpg" alt="fabio tenorio">
+                    <h3>Fabio Tenorio</h3>
+                    <p>Passionné du HTML, il essaye de mettre des balises partout, mais la vie - et git push - lui cachent toujours des surprises.</p>
+                    <a href="#">en savoir plus</a>
+                </article>
+            </section>
+            <section id="contactsection">
+                <h3>Contact</h3>
+                <a href="mailto:contact@fleursdeville.com">contact@fleursdeville.com</a>
+                <label for="petitmot">Laissez-nous un petit mot:</label>
+                <textarea id="petitmot" name="petitmot" rows="12" cols="60">Écrivez votre message ici...</textarea>
+            </section>
+            <section id="mapsection">
+                <h3>Venez prendre un thé verd avec nous !</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d498.28056099200467!2d-54.72626735153391!3d-2.425272736130077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m3!3m2!1d-2.4252401!2d-54.7261484!4m5!1s0x9288f9213cb04ad5%3A0x80be3f9dd767d647!2zU2FudGFyw6ltLCBQQSwgQnJhc2ls!3m2!1d-2.4506291!2d-54.7009228!5e0!3m2!1spt-BR!2sfr!4v1603289587109!5m2!1spt-BR!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
+            <section id="presentationpartners">
+                <h3>Nos partenaires</h3>
+                <div id="logopartners">
+                    <a href="#"><img class="imglogopartner" src="images/bunge.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/aes.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/cargill.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/monsanto.png"></a>
+                    <a href="#"><img class="imglogopartner" src="images/conagra.png"></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <form action="#" id="newsform">
+                <label for="newsinput">Envie de recevoir notre newsletter ?</label>
+                <div>
+                    <input type="text" id="newsinput" placeholder="informez votre adresse email">
+                    <button type="submit" id="newsbutton">Ça y est</button>
+                </div>
+            </form>
+            <div class="footerlistblock">
+                <ul class="footerlist">
+                    <li class="footerlisttitle">Explorez notre siteweb</li>
+                    <li><a href="accueil.html">accueil</a></li>
+                    <li><a href="presentation.html">presentation</a></li>
+                    <li><a href="plantes.html">plantes</a></li>
+                    <li><a href="fleurs.html">fleurs</a></li>
+                    <li><a href="arbustes.html">arbustes</a></li>
+                    <li><a href="legumes.html">legumes</a></li>
+                </ul>
+            </div>
+            <div class="footerlistblock">
+                <ul class="footerlist">
+                    <li class="footerlisttitle">Sites qui peuvent vous intéresser</li>
+                    <li><a href="https://pretapousser.fr/magazine/creer-mini-potager-balcon">Prêt-à-Pousser</a></li>
+                    <li><a href="https://www.gammvert.fr/conseils/conseils-de-jardinage/potager-au-balcon">Gamme Vert</a></li>
+                    <li><a href="https://www.nutrition-animale-marseille.fr/">Champ Vert</a></li>
+                    <li><a href="https://www.roubaud-bonneveine.com/pepiniere-jardinerie">Pépinière Roubaud Jean-Pierre</a></li>
+                    <li><a href="https://www.planfor.fr/?gclid=Cj0KCQjw28T8BRDbARIsAEOMBczN5NZimanG6K4vH1CBpE18pMW5F0CbBcAKk8sEr5mpznn7bDpb1rMaApY_EALw_wcB">Planfor</a></li>
+                </ul>
+            </div>
+            <div class="footerlistblock">
+                <h4>Suivez-nous sur les réseaux sociaux</h4>
+                <div id="footerimgsocial">
+                    <a href="#"><img class="imgicon" src="images/instagram.svg" alt="linkedIn logo"></a>
+                    <a href="#"><img class="imgicon" src="images/pinterest.svg" alt="Facebook logo"></a>
+                    <a href="#"><img class="imgicon" src="images/youtube.svg" alt="Facebook logo"></a>
+                    <a href="#"><img class="imgicon" src="images/twitter.svg" alt="Instragram logo"></a>
+                    <a href="#"><img class="imgicon" src="images/facebook.svg" alt="Twitter logo"></a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
